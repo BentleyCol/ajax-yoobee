@@ -16,7 +16,7 @@ $(document).ready(function(){
 			url: 'http://bentley.cole.yoobee.net.nz/ajax-yoobee/ajax-yoobee.php',
 			data: {note: $('#note').val()},
 			success: function(dataFromServer) {
-
+				console.log( dataFromServer );
 			},
 			error: function() {
 				alert('Cannot Connect');
