@@ -21,6 +21,12 @@ $(document).ready(function(){
 			error: function() {
 				alert('Cannot Connect');
 			}
-		});
+
+			for (var i = 0; i < dataFromServer.length; i++) {
+				document.getElementById("note-list").innerHTML = dataFromServer;
+			};
+		});		
 	});
+
+
 });
